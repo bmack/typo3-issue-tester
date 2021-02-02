@@ -7,3 +7,8 @@ services:
   Bmack\IssueTester\:
     resource: '../Classes/*'
 
+  Bmack\IssueTester\DataGeneratorWorkspaceListener:
+    tags:
+      - name: event.listener
+        identifier: 'issue-tester'
+        event: TYPO3\CMS\Workspaces\Event\AfterDataGeneratedForWorkspaceEvent
