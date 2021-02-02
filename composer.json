@@ -1,0 +1,26 @@
+{
+  "name": "bmack/typo3-issue-tester",
+  "type": "typo3-cms-extension",
+  "authors": [
+    {
+      "name": "Benni Mack",
+      "email": "benni@typo3.org",
+      "role": "Developer",
+      "homepage": "https://github.com/bmack/"
+    }
+  ],
+  "license": ["GPL-2.0-or-later"],
+  "require": {
+    "typo3/cms-core": "^9.5.6 || ^10.0 || ^11.0"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "issue_tester"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Bmack\\IssueTester\\": "Classes/"
+    }
+  }
+}
